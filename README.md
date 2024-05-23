@@ -10,9 +10,11 @@ Each match in League of Legends begins with all players starting at level one. P
 This project focuses on analyzing the key objectives within League of Legends matches and evaluating their impact on the likelihood of winning. By examining objective-related data, we aim to provide actionable insights into the strategic elements that most significantly influence match outcomes.
 
 
-## Data Set Overview: League of Legends Ranked Match Data (NA)
+## Data Set Overview and EDAs
 
 The data set, titled __League of Legends Ranked Match Data from NA__, was sourced from Kaggle and comprises data from over 10,000 matches featuring players approximately ranked at the Gold level within League of Legends. The original dataset contains 775 columns, capturing a wide array of variables including individual player items, kills, deaths, champions, and various team statistics and objectives.
+
+__Original Data Set Link:__ https://www.kaggle.com/datasets/jamesbting/league-of-legends-ranked-match-data-from-na
 
 For this personal project, the focus was narrowed to the primary objectives of the game rather than individual player statistics. Consequently, all rows pertaining to summoners 1 to 5 on both the Red and Blue teams were removed, reducing the dataset to 24 columns. Further refinements, such as combining similar columns (e.g., b_tower_kills and r_tower_kills), resulted in a final dataset comprising 17 columns.
 
