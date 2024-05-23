@@ -1,4 +1,4 @@
-# Forever_Red_Vs_Blue
+# Forever Red Vs Blue
 ## League of Legends: Analysis of Main Objectives and Their Impact on Match Outcomes
 
 __By Lotus Baumgarner__
