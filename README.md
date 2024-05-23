@@ -16,7 +16,7 @@ The data set, titled __League of Legends Ranked Match Data from NA__, was source
 
 __Original Data Set Link:__ https://www.kaggle.com/datasets/jamesbting/league-of-legends-ranked-match-data-from-na
 
-For this personal project, the focus was narrowed to the primary objectives of the game rather than individual player statistics. Consequently, all rows pertaining to summoners 1 to 5 on both the Red and Blue teams were removed, reducing the dataset to 24 columns. Further refinements, such as combining similar columns (e.g., b_tower_kills and r_tower_kills), resulted in a final dataset comprising 17 columns.
+For this personal project, the focus was narrowed to the primary objectives of the game rather than individual player statistics. So I ended up removing about 375 columns for both the Red Team and the Blue Team reducing the dataset to 24 columns. Further refinements, such as combining similar columns (e.g., b_tower_kills and r_tower_kills), resulted in a final dataset comprising 17 columns.
 
 Notably, the dataset contained no missing values, and the target variable, Winner, was relatively balanced. As a result, all 10,013 rows were retained, yielding a final dataset of 10,013 rows across 17 columns.
 
