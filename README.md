@@ -3,43 +3,69 @@
 
 __By Lotus Baumgarner__
 
-Since its inception in October 2009, League of Legends has emerged as one of the foremost esports globally, boasting a player base and fan following that rivals, and perhaps surpasses, even the NFL. Despite significant evolution since its original client, League of Legends has consistently maintained its reputation as a skill-based, free-to-play game. Monetization is strictly through optional character customization, ensuring no pay-to-win elements.
+### *Overview*
+League of Legends (LoL), launched in October 2009, has become a premier esport globally, with a player base and fan following that rivals even the NFL. Despite its evolution since the original client, LoL has remained a skill-based, free-to-play game, with monetization strictly through optional character customization, ensuring no pay-to-win elements.
 
-Each match in League of Legends begins with all players starting at level one. Players must collaborate with their teammates to level up, purchase new items, and achieve various in-game objectives to secure victory.
+Each match in LoL starts with all players at level one. Players collaborate with teammates to level up, purchase new items, and achieve various in-game objectives to secure victory.
 
-This project focuses on analyzing the key objectives within League of Legends matches and evaluating their impact on the likelihood of winning. By examining objective-related data, we aim to provide actionable insights into the strategic elements that most significantly influence match outcomes.
+### *Project Objective*
+This project aims to analyze the key objectives within League of Legends matches and evaluate their impact on the likelihood of winning. By examining objective-related data, the goal is to provide actionable insights into the strategic elements that most significantly influence match outcomes.
 
+### *Dataset Overview*
+The dataset, titled League of Legends Ranked Match Data from NA, was sourced from Kaggle and comprises data from over 10,000 matches featuring players approximately ranked at the Gold level within League of Legends. The original dataset contains 775 columns, capturing a wide array of variables, including individual player items, kills, deaths, champions, and various team statistics and objectives.
 
-## Data Set Overview and EDAs
+For this personal project, the focus was narrowed to the primary objectives of the game rather than individual player statistics. Consequently, all rows pertaining to summoners 1 to 5 on both the Red and Blue teams were removed, reducing the dataset to 24 columns. Further refinements, such as combining similar columns (e.g., b_tower_kills and r_tower_kills), resulted in a final dataset tailored to analyze the key objectives.
 
-The data set, titled __League of Legends Ranked Match Data from NA__, was sourced from Kaggle and comprises data from over 10,000 matches featuring players approximately ranked at the Gold level within League of Legends. The original dataset contains 775 columns, capturing a wide array of variables including individual player items, kills, deaths, champions, and various team statistics and objectives.
+### *Key Objectives Analyzed*
+- First Blood
+- First Tower
+- First Inhibitor
+- First Baron
+- First Dragon
+- First Rift Herald
+- Total Tower Kills
+- Total Inhibitor Kills
+- Total Baron Kills
+- Total Dragon Kills
+- Total Rift Herald Kills
 
-__Original Data Set Link:__ https://www.kaggle.com/datasets/jamesbting/league-of-legends-ranked-match-data-from-na
+### *Analysis and Findings*
 
-For this personal project, the focus was narrowed to the primary objectives of the game rather than individual player statistics. So I ended up removing about 375 columns for both the Red Team and the Blue Team reducing the dataset to 24 columns. Further refinements, such as combining similar columns (e.g., b_tower_kills and r_tower_kills), resulted in a final dataset comprising 17 columns.
-
-Notably, the dataset contained no missing values, and the target variable, Winner, was relatively balanced. As a result, all 10,013 rows were retained, yielding a final dataset of 10,013 rows across 17 columns.
-
-This refined dataset will be utilized to analyze the impact of key objectives on match outcomes, providing insights into the strategic elements that most significantly influence victory in League of Legends.
-
-
-## Columns After Cleaning and Formatting:
-__Tower_Kills_Blue:__ Number of towers killed by the blue team  
-__Inhib_Kills_Blue:__ Number of inhibitors taken by the blue team  
-__Baron_Kills_Blue:__ Number of Barons killed by the blue team  
-__Dragon_Kills_Blue:__ Number of dragons killed by the blue team  
-__Rift_Kills_Blue:__ Number of Rift Heralds killed by the blue team  
-__Tower_Kills_Red:__ Number of towers killed by the red team  
-__Inhib_Kills_Red:__ Number of inhibitors taken by the red team  
-__Baron_Kills_Red:__ Number of Barons killed by the red team  
-__Dragon_Kills_Red:__ Number of dragons killed by the red team  
-__Rift_Kills_Red:__ Number of Rift Heralds killed by the red team  
-__First_Blood:__ Team that achieved the first kill  
-__First_Tower:__ Team that destroyed the first tower  
-__First_Inhibitor:__ Team that destroyed the first inhibitor  
-__First_Baron:__ Team that killed the first Baron  
-__First_Dragon:__ Team that killed the first dragon  
-__First_Rift_Herald:__ Team that killed the first Rift Herald  
-__Winner:__ The team that won the game  
+__Data Cleaning and Preparation:__
+- Removed individual player statistics.
+- Combined similar columns for a consolidated view of team objectives.
+- Ensured data consistency and accuracy by checking for extra characters or white spaces in column names.
 
 
+__Exploratory Data Analysis (EDA):__
+- Conducted initial analysis to understand the distribution and correlation of key objectives with match outcomes.
+- Visualized data to identify trends and patterns.
+
+
+__Impact Analysis:__
+- Evaluated the impact of achieving each key objective on the likelihood of winning a match.
+- Used statistical methods to determine the significance of each objective.
+
+
+### *Conclusion*
+The analysis provides insights into the strategic importance of key objectives in League of Legends. Understanding the impact of these objectives can help players and teams make more informed decisions during matches, potentially increasing their chances of winning.
+
+
+### *Future Work*
+- Expand the analysis to include matches from other regions and different ranks.
+- Incorporate machine learning models to predict match outcomes based on key objectives.
+- Explore the impact of patch updates on the significance of different objectives.
+
+### *Acknowledgments*
+- Kaggle for providing the dataset.
+- The League of Legends community for their continuous support and engagement.
+
+### Repository Structure
+
+├── Data  
+├── Images  
+├── .gitignore  
+├── EDAs-Feature Selection.ipynb   
+├── Models-Conclusions.ipynb  
+├── PowerPoint_PDF.pdf  
+└── README.md  
