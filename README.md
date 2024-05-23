@@ -65,7 +65,6 @@ The analysis provides insights into the strategic importance of key objectives i
 ├── Data  
 ├── Images  
 ├── .gitignore  
-├── EDAs-Feature Selection.ipynb   
-├── Models-Conclusions.ipynb  
+├── LeagueOfLegends.ipynb  
 ├── PowerPoint_PDF.pdf  
 └── README.md  
